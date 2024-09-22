@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Health is Wealth</h1>
+        <h2>Track Your Wealth</h2>
+    </div>
+    <div class="container">
+        <form id="health-form">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <label for="sleep">Sleep Hours:</label>
+            <input type="number" id="sleep" name="sleep" required>
+
+            <label for="working-hours">Working Hours:</label>
+            <input type="number" id="working-hours" name="working-hours" required>
+
+            <label for="pressure">Work Pressure (1 to 10):</label>
+            <input type="number" id="pressure" name="pressure" min="1" max="10" required>
+
+            <label for="diet">Diet Preference:</label>
+            <select id="diet" name="diet" required>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="non-vegetarian">Non-Vegetarian</option>
+            </select>
+
+            <label for="calories">Calories Consumed (Today):</label>
+            <input type="number" id="calories" name="calories" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="feedback"></div>
+    </div>
+    <footer>
+        <p>Created by Shriram Hegde | Contact: shriramh46@gmail.com | All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
